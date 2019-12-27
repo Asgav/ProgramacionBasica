@@ -33,7 +33,7 @@ function dibujarLinea(shadow_color, color, x_inicial, y_inicial, x_final, y_fina
   lienzo.moveTo(x_inicial,y_inicial);
   lienzo.lineTo(x_final,y_final);
   lienzo.stroke();
-  lienzo.closePath()
+  lienzo.closePath();
 }
 dibujarLinea("red", "green", 400, 100, 500, 100);
 dibujarLinea("orange", "red", 400, 200, 500, 200);
