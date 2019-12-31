@@ -1,11 +1,16 @@
+var texto = document.getElementById("texto_lineas");
+var boton = document.getElementById("botoncito");
+boton.addEventListener("click", dibujarPorClick);
 var g = document.getElementById("dibujo1");
+var ancho = 500;
 var ctx = g.getContext("2d");
 var lineas = 50;
 var l = 0;
 var yi, xf, xf1;
 var color = "#FAF"
 var color1= "lightgreen"
-while(l < lineas) { 
+while(l < lineas) 
+{ 
   yi = 10 * l;
   xf = 10 + (10 * l);
   xf1= 500 - (10+ (10 * l));
@@ -32,5 +37,18 @@ ctx.fillStyle = "#572364";
 ctx.fill();
 ctx.stroke();
 ctx.closePath();
-
-
+function dibujarPorClick()
+{
+  var xx = parseInt(texto.value);
+  var l = 0;
+  var yi, xf;
+  var colorcito = "lightblue";
+  var espacio = ancho / xx;
+  for (l = 0; l < xx; l++)
+   {
+     yi = espacio * l;
+     xf = espacio * (l + 1);
+     dibujarLinea(colorcito, 0, yi, xf, 500);
+     dibujarLinea(colorcito, 500, yi, xf, 0);
+   }
+}
