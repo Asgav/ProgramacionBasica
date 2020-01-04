@@ -11,9 +11,21 @@
   <p>
      Cuantas lineas quieres
      <input type="text" id="texto_lineas"/>
-     <input type="button" value= "Dale!" id="botoncito" />
+     <input type="button" value="Dale!" id="botoncito" /><br />
+     <br />
+     Elige el primer color
+     <input type="color" id="colorcito1" /><br />
+     Elige el segundo color
+     <input type="color" id="colorcito2" /><br />
+     <br />
+     Elige una forma:
+    <input type="radio" name=formas id="circulo"/> Circulo
+    <input type="radio" name=formas id="cuadrado"/> Cuadrado<br />
   </p>
   <canvas height="500" width="500" id="dibujo1"></canvas>
+  <p>
+    <input type="button" value="Borrar" id="borrar" />
+  </p> 
   <script src="dibujo_1.js"></script>
 </body>
 </html>
