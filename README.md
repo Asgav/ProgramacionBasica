@@ -1,4 +1,4 @@
 # Curso Platzi progamación básica
 
 
-Curso básico sobre JavaScript y html.
+Curso básico de programación con Javascript y HTML
